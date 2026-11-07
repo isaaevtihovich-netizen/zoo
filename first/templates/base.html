@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Mew Mew{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'first/css/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{% url 'home' %}" class="logo">Mew Mew</a>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Главная</a></li>
+                <li><a href="{% url 'about' %}" class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">О нас</a></li>
+                <li><a href="{% url 'contacts' %}" class="{% if request.resolver_match.url_name == 'contacts' %}active{% endif %}">Контакты</a></li>
+                <li><a href="{% url 'how_to_find' %}" class="{% if request.resolver_match.url_name == 'how_to_find' %}active{% endif %}">Как найти</a></li>
+                <li><a href="{% url 'animals' %}" class="{% if request.resolver_match.url_name == 'animals' %}active{% endif %}">Животные</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>Москоу 2026 Mew Mew</p>
+    </footer>
+
+</body>
+</html>

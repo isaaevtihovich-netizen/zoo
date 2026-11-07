@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Как найти{% endblock %}
+
+{% block content %}
+    <h1>Как нас найти</h1>
+
+    <div class="card" style="max-width: 800px; text-align: left; padding: 20px; margin-top: 20px;">
+        <h2 style="margin-top: 0; margin-bottom: 10px; font-size: 24px;">Ждем вас в гости!</h2>
+
+        <p style="margin-bottom: 15px;">
+            Наш зоопарк находится в самом центре города, добраться до нас очень просто.
+        </p>
+
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px;">
+            <div style="background: #ffe6f0; padding: 10px 15px; border-radius: 15px;">
+                <strong>Точный адрес:</strong> г. Москва, ул. Кошачья, д. 1 (ТЦ "Розовый Мир", 3 этаж)
+            </div>
+            <div style="background: #ffe6f0; padding: 10px 15px; border-radius: 15px;">
+                <strong>На метро:</strong> ст. м. "Пушкинская", выход №2. Далее пешком 5 минут прямо по улице.
+            </div>
+            <div style="background: #ffe6f0; padding: 10px 15px; border-radius: 15px;">
+                <strong>На машине:</strong> Есть бесплатная парковка для гостей со стороны ТЦ.
+            </div>
+        </div>
+
+        <p style="margin-bottom: 20px;">
+            Ориентир: большое розовое сердце на входе в здание. Вы точно не пройдете мимо!
+        </p>
+
+        <div style="background: #ffb6c1; color: #fff; padding: 15px; border-radius: 15px; text-align: center; font-weight: bold;">
+            Сайт находится в разработке. Совсем скоро мы добавим интеграцию с Яндекс Картами, чтобы вам было еще проще нас найти!
+        </div>
+    </div>
+{% endblock %}

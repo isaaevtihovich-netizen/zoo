@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+    <h1>Связаться с нами</h1>
+
+    <div class="card" style="max-width: 800px; text-align: left; padding: 20px;">
+        <h2 style="margin-top: 0; margin-bottom: 10px; font-size: 24px;">Мы всегда на связи!</h2>
+        <p style="margin-bottom: 15px;">
+            Если у вас есть вопросы по поводу животных, сотрудничества или просто хотите написать нам.
+        </p>
+
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px;">
+            <div style="background: #ffe6f0; padding: 10px 15px; border-radius: 15px;">
+                <strong>Телефон:</strong> +7 (999) 123-45-67. Пишите, мы никогда вам не рады =)!
+            </div>
+            <div style="background: #ffe6f0; padding: 10px 15px; border-radius: 15px;">
+                <strong>Почта:</strong> hello@mewmew.zoo
+            </div>
+            <div style="background: #ffe6f0; padding: 10px 15px; border-radius: 15px;">
+                <strong>Адрес:</strong> г. Москва, ул. Кошачья, д. 1 (ТЦ "Розовый Мир", 3 этаж)
+            </div>
+            <div style="background: #ffe6f0; padding: 10px 15px; border-radius: 15px;">
+                <strong>Режим работы:</strong> Ежедневно с 10:00 до 22:00
+            </div>
+        </div>
+
+        <h2 style="margin-top: 0; margin-bottom: 10px; font-size: 24px;">Мы в соцсетях</h2>
+        <p style="margin-bottom: 10px;">Подписывайтесь, чтобы не пропустить новые фото и видео с нашими пушистиками!</p>
+
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <a href="#" style="background: #ffb6c1; color: #fff; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-weight: bold; border: none;">TikTok</a>
+            <a href="#" style="background: #ffb6c1; color: #fff; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-weight: bold; border: none;">Telegram</a>
+            <a href="#" style="background: #ffb6c1; color: #fff; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-weight: bold; border: none;">VK</a>
+        </div>
+    </div>
+{% endblock %}

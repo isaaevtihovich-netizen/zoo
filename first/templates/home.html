@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+    <h1>Mew mew</h1>
+
+    <div class="gallery">
+        <img src="{% static 'images/kitty1.png' %}" alt="kittmamynemav">
+        <img src="{% static 'images/kitty2.png' %}" alt="kittmamymav">
+        <img src="{% static 'images/kitty3.png' %}" alt="Cinnamoroll">
+    </div>
+{% endblock %}
